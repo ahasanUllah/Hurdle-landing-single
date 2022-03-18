@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--Violet);
+}
+.container{
+    margin: 2em;
+}
+img{
+    max-width: 100%;
+}
+.header img{
+    width: 10em;
+    margin: 2em 0 4em 0;
+}
+.text-box{
+    text-align: center;
+}
+.text-box h1{
+    font-size: 2em;
+    padding: 2em 0;
+    color: white;
+}
+.text-box p{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.952);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.text-box a{
+    display: inline-block;
+    text-decoration: none;
+    color:var(--Violet) ;
+    background-color: white;
+    padding: 13px 80px;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.10);
+    margin: 2em 0;
+}
+.text-box a:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.social{
+    text-align: center;
+}
+.social a{
+    color: white;
+    
+}
+.iconWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 30px; height: 30px; 
+    border: 1px solid white;
+    margin-right: 10px;
+   
+    border-radius: 50px;
+  }
+  .icon-container{
+      display: flex;
+      justify-content: center;
+      
+  }
+  
+  @media (min-width:768px) {
+      .main{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 40px;
+        
+      }
+      .text-box{
+          text-align: left;
+          max-width: 50%;
+                  
+      }
+      .text-box h1{
+          padding: 1em 6em 1em 0;
+      }
+      .text-box p{
+        padding: 1em 6em 20px 0;
+    }
+      .mockup img{
+          width: 100%;
+      }
+      .text-box a{
+          margin: 0;
+      }
+      .icon-container{
+          width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin: 4em 0 0 0;
+        
+    }
+  }
